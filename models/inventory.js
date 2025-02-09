@@ -12,15 +12,19 @@ Inventory.init(
     },
     name: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     quantity: {
       type: DataTypes.INTEGER,
+      allowNull: false,
     },
     price: {
-      type: DataTypes.DOUBLE,
+      type: DataTypes.FLOAT,
+      allowNull: false,
     },
     description: {
       type: DataTypes.TEXT,
+      allowNull: false,
     },
   },
   {

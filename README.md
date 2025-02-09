@@ -1,51 +1,81 @@
 # Assignment_1_PROG2390
 
-Assinment 1 for the class of Small Business Solutions
+Assignment 1 for the Small Business Solutions class (PROG2390)
 
 # Description
 
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This project is an inventory management web application built for the PROG2390 - Small Business Solutions course. It provides a user interface for managing an inventory list, including Create, Read, Update, and Delete (CRUD) operations. The application uses the following technologies:
 
-# Badges
-
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-# Visuals
-
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- **Backend:** Node.js, Express.js, Sequelize (ORM), PostgreSQL (hosted on Neon.tech)
+- **Frontend:** EJS (templating engine)
 
 # Installation
 
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+1.  **Clone the Repository:**
+    [https://github.com/Fer-work/Assignment_1_PROG2390.git](https://github.com/Fer-work/Assignment_1_PROG2390)
+
+    ```bash
+    git clone https://github.com/Fer-work/Assignment_1_PROG2390.git
+    cd Assignment_1_PROG2390
+    ```
+
+2.  **Install Dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables:**
+
+    - Create a `.env` file in the root directory of the project.
+    - Add your PostgreSQL connection URL (from Neon.tech) to the `.env` file. For example:
+      ```
+      DATABASE_URL=postgres://user:password@host:port/database
+      ```
+      _(Make sure to replace with your actual credentials.)_
+
+4.  **Run the Application:**
+    - **Development Mode (using Nodemon):**
+      ```bash
+      npm run dev
+      ```
+    - **Production Mode:**
+      ```bash
+      npm start
+      ```
+      or
+      ```
+      node server.js
+      ```
 
 # Usage
 
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-# Support
-
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-# Roadmap
-
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+1.  Access the application in your web browser at `http://localhost:3000` (or the port your server is running on).
+2.  You will see the inventory list page.
+3.  Use the provided forms to add, edit, or delete items from the inventory.
 
 # Contributing
 
-State if you are open to contributions and what your requirements are for accepting them.
+Contributions are welcome! Please follow these steps:
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+1.  Fork the repository.
+2.  Create a new branch for your contributions.
+3.  Make your changes.
+4.  Submit a pull request.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+I will review pull requests and merge them if the changes are appropriate.
 
-# Authors and acknowledgment
+# Authors and Acknowledgements
 
-Show your appreciation to those who have contributed to the project.
+- Fernando Sanchez Gutierrez
+- **Inspiration and Guidance:**
+  - [DCodeMania](https://www.youtube.com/watch?v=7NnBCKJTZkc)
+  - [Professor Harry's Tutorials](https://www.youtube.com/watch?v=Hskz5Ex_gcQ)
 
 # License
 
-For open source projects, say how it is licensed.
+MIT License (See [LICENSE](LICENSE) file for details)
 
-# Project status
+# Project Status
 
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Completed for Assignment 1 submission. While the core functionality is implemented, due to time constraints, I acknowledge that there are areas for improvement, such as additional input validation and more robust error handling. I plan to revisit and enhance this project for use in a personal website in the future.
